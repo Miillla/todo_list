@@ -12,6 +12,8 @@ function defaultTodos() {
       ])
     );
     reloadPage();
+  } else if (localStorage.getItem("firstLoad") == "true") {
+    showLists();
   }
 }
 
